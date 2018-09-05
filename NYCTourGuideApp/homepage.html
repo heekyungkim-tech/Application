@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>homepage by Kim</title>
+  </head>
+  <style>
+  .container {
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+  .thumbnail a {
+    text-align: center;
+    color: black;
+    text-decoration:none;
+  }
+  footer .nav-link{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer .navbar-nav, .nav-item{
+    margin: auto;
+    padding: 0;
+  }
+  footer .nav-item i {
+    color: #fff;
+  }
+  footer .nav-link i:hover {
+    font-size: 30px;
+  }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
+
+      <!-- Brand -->
+      <i class="fa fa-user-circle mr-2" style="font-size:36px;color:#fff;"></i>
+      <a class="navbar-brand font-weight-bold justify-content-center" href="#">VISIT NYC</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" style="font-size:18px;" id="collapNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="homepage.html" target="_self">
+              <i class="fa fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+              <i class="fa fa-suitcase"></i> Trips</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Sub1.html">Statue of Liberty</a>
+                <a class="dropdown-item" href="Sub2.html">Brooklyn Bridge</a>
+                <a class="dropdown-item" href="Sub3.html">Central Park</a>
+              </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action=" .php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search.." aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search <i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </nav><!--the end of navigation-->
+
+    <!--image gallery-->
+    <div class="container">
+      <h2>The best NYC tours </h2>
+      <p>Get the most out of your visit with our guide to the best tours in NYC.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="Sub1.html" target="_self">
+              <img src="image/LibertyStatue1.jpg" alt="Statue of liberty1" style="width:100%">
+              <div class="caption">
+                <p>1. Statue of Liberty</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="Sub2.html" target="_self">
+            <img src="image/BrooklynBridge1.jpg" alt="Brooklyn Bridge" style="width:100%">
+            <div class="caption">
+              <p>2. Brooklyn Bridge</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="Sub3.html" target="_self">
+            <img src="image/CentralPark1.jpg" alt="Central Park" style="width:100%">
+            <div class="caption">
+              <p>3. Central Park</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!--the end of image gallery-->
+
+  <!--fixed footer navigation-->
+  <footer class="navbar navbar-expand navbar-dark bg-info fixed-bottom">
+      <ul class="navbar-nav mr-auto" style="font-size:25px;">
+        <li class="nav-item active">
+          <a class="nav-link" href="homepage.html" target="_self">
+            <i class="fa fa-home"></i>
+            <p>Home</p>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.nycgo.com/plan-your-trip/basic-information/official-nyc-information-centers" target="_blank">
+            <i class="fa fa-exclamation-circle"></i>
+            <p>Info</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="image/nycMap.png" target="_blank">
+            <i class="fa fa-map-o"></i>
+            <p>Map</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-bookmark"></i>
+            <p>Saved</p>
+          </a>
+        </li>
+      </ul>
+    </footer><!--the end of footer-->
+
+  </body>
+</html>
