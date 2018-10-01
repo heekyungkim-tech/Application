@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Subpage-animal by Kim</title>
+    <style type="text/css">
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url("img/background.jpg");
+      background-size: 375px 700px;
+    }
+    h3{
+      text-align: center;
+    }
+    .main-nav {
+      background: orange;
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 50px;
+    }
+    .nav-brand {
+      color: white;
+      line-height: 50px;
+      font-size: 30px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+    }
+    .nav-toggle {
+      width: 40px;
+      height: 30px;
+      border-radius: 30%;
+      background: #fff;
+      position: relative;
+      margin-left: auto;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    .nav-list {
+      position: absolute;
+      list-style: none;
+      top: 30px;
+      background: rgba(255,255,255,0.8);
+      width: 100%;
+      padding: 5px 20px;
+      transition: .5s;
+      max-height: 200px;
+      overflow: hidden;
+    }
+    .nav-list li {
+      padding: 5px;
+    }
+    .nav-list a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        display: inline-block;
+        padding: 2px;
+        transition: .5s;
+      }
+    .nav-list  a:hover {
+        color: orange;
+      }
+    .nav-list.nav-list-collapsed {
+      max-height: 0px;
+    }
+    /*flip card*/
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      margin: 90px auto;
+    }
+    .flip-card h1 {
+      margin-top: 40%;
+      font-size: 40px;
+    }
+    .flip-card img{
+      width:100%;
+      height:100%;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 2s;
+      transform-style:preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    .flip-card-back {
+      background-color: #fff;
+      color: orange;
+      transform: rotateY(180deg);
+    }
+    /*slide*/
+    .prev, .next{
+      cursor: pointer;
+      padding: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      background-color:#fff;
+    }
+    .prev:hover, .next:hover {
+      background-color: orange;
+    }
+    .prev, .next {
+      background-color: lightblue;
+      margin: 30px;
+    }
+    .prev {
+      margin-left: 27%;
+    }
+    .next {
+      margin-right: 27%;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="#" class="nav-brand">Learn Animals</a>
+      <div class="nav-toggle" id="main-nav-toggle">
+      </div>
+      <ul class="nav-list nav-list-collapsed" id="main-nav-list">
+          <li><a href="main.html">&#10094; Back to main page</a></li>
+      </ul>
+    </nav>
+    <section class="slideshow-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/animal.jpg" alt="Penguin">
+          </div>
+          <div class="flip-card-back">
+            <h1 style="color: blue;">Penguin</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/cat.png" alt="Cat">
+          </div>
+          <div class="flip-card-back">
+            <h1 style="color: pink;">Cat</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/dog.png" alt="Dog">
+          </div>
+          <div class="flip-card-back">
+            <h1 style="color: orange;">Dog</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/lion.png" alt="Lion">
+          </div>
+          <div class="flip-card-back">
+            <h1 style="color: red;">Lion</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/elephant.jpg" alt="Elephant">
+          </div>
+          <div class="flip-card-back">
+            <h1 style="color: grey;">Elephant</h1>
+          </div>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <script type="text/javascript" src="Js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="Js/Sub.js"></script>
+  </body>
+</html>
