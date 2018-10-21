@@ -9,4 +9,4 @@ Project URL - https://gonative.io/share/wpaqma
 #Kids Learning Application <br/>
 : This is an application created with html, css, Javascript (JQuery).
 This application includes sources that help toddlers learn simple words in several toppics such as fruits, animals, numbers, colors by flipe cards. And it also includes simple games so that kids enjoy and remind the words.
-It is for mobile application that is suitable for iphone8 size. 
+It is for mobile application that is suitable for iphone8 size (375*667 size). 
